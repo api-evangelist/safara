@@ -1,0 +1,16 @@
+generated: '2026-10-24'
+method: none
+source:
+- https://zapier.com/apps/safara/integrations
+- https://n8n.io/integrations/safara/
+- https://composio.dev/toolkits/safara
+- https://monid.ai/tools/safara
+checked:
+- https://composio.dev/toolkits/safara
+- https://monid.ai/tools/safara
+- https://n8n.io/integrations/safara/
+- https://zapier.com/apps/safara/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

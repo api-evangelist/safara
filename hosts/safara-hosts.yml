@@ -1,0 +1,57 @@
+generated: '2026-10-24'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 4
+  own: 3
+  other_domain: 1
+  platform: 0
+  roles:
+  - api
+  - identity
+  - other
+  - website
+hosts:
+- host: api.safara.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: safara.com
+  role: api
+  relation: own
+- host: get.safara.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: safara.com
+  role: other
+  relation: own
+- host: www.godrift.com
+  found_by:
+  - pointer
+  types:
+  - TermsOfService
+  - PrivacyPolicy
+  - Login
+  serves: []
+  registrable_domain: godrift.com
+  role: identity
+  relation: other-domain
+- host: www.safara.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  types:
+  - Website
+  serves: []
+  registrable_domain: safara.com
+  role: website
+  relation: own
